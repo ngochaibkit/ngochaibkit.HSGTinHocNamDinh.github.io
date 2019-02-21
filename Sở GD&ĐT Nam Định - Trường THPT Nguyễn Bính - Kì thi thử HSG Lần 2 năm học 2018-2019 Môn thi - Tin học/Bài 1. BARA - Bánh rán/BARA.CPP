@@ -18,9 +18,10 @@ int main()
             f1 >> n >> k;
             if (f1.eof())
                 break;
+            //Neu so luong banh co it hon luong banh max co the ran thi thoi gian can ran luon bang 10'
             if (n<=k)
                 f2 << 10 << endl;
-            else if (n%k==0)
+            else if (n%k==0) //Neu luong banh cho chia het cho max ran
                 f2 << (n/k)*10 << endl;
             else
             {
